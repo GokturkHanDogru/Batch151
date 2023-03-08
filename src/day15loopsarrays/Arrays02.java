@@ -14,7 +14,7 @@ public class Arrays02 {
 
         System.out.println(grade[0]+grade[grade.length-1]);
 
-        //Example 2: Size verilen bir String array'deki isimlerden 5 character'den az character icerenleriu console'a yazdiriniz
+        //Example 2: Size verilen bir String array'deki isimlerden 5 character'den az character icerenleri console'a yazdiriniz
 
         String stdNames[] = new String[5];
         stdNames[0] = "Ajda";
@@ -36,7 +36,7 @@ public class Arrays02 {
         }
         System.out.println("*************");
         //Example 3: Size verilen bir String array'deki isimleri alfabetik siraya koyduktan sonra F ile baslayan
-//           isilerden onceki isimleri console'a yazdiriniz
+//           isimlerden onceki isimleri console'a yazdiriniz
 
         Arrays.sort(stdNames);
         System.out.println(Arrays.toString(stdNames));
