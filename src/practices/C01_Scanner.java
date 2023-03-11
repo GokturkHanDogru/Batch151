@@ -26,23 +26,25 @@ public class C01_Scanner {
         //My Method
 
         System.out.println("Write a number with five digit!");
-        double sayi = input.nextInt();
-        double newNumber =0;
-        double sum = 0;
+        int sayi = input.nextInt();
+        int newNumber =0;
+        int sum = 0;
 
 
 
         for (int i = 1; i<=5;i++){
-            if (i==2) {
+            if (i==3) {
                 continue;
             }
             else{
                  newNumber=(sayi%(10));
-                System.out.println(newNumber);
+               // System.out.println(newNumber);
 
                  sum += newNumber;
-                sayi=(sayi/Math.pow(10,i));
-                System.out.println(sayi);
+
+
+                 sayi=(sayi/10);
+              //  System.out.println(sayi);
 
             }
 
@@ -50,7 +52,7 @@ public class C01_Scanner {
 
         System.out.println("**********");
         System.out.println(sum);
-        System.out.println(Math.round(sum));
+        //System.out.println(Math.round(sum));
 
     }
 }
