@@ -33,7 +33,7 @@ public class Loops3 {
 
         do {
 
-            System.out.println("please write a word");
+            System.out.println("please write a word ");
             String s = input.next();
 
             if (s.endsWith(".")&& (s.charAt(0)>='A' && s.charAt(0)<='Z')) {
