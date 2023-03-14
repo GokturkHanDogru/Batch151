@@ -5,21 +5,15 @@ import java.util.Scanner;
 public class Credit_Karte {
     public static void main(String[] args) {
         String name = "Gokturk";
-        String cardId = "1234 5678 9123 4567";
+        String cardId = "1234567891234567";
 
-       /* for (int i =0; i<name.length();i++){
-            if (name.charAt(i) == ' '){
-                continue;
-           */
 
         String  ilkharf=name.substring(0,1);
         name=name.substring(0).replaceAll("[a-zA-Z]","*");
         System.out.print(ilkharf.concat(name)+" ");
 
-        for (int i =0;i<cardId.length();i++){
-            if (cardId.charAt(i) == ' ') {
-                continue;
-            }
+      /*  for (int i =0;i<cardId.length();i++){
+
                 if (i < cardId.length() - 4) {
                     System.out.print("*");
 
@@ -29,7 +23,15 @@ public class Credit_Karte {
                     break;
                 }
 
-            }
+            }*/
+        System.out.println(" ");
+        System.out.println("------------------------------");
+
+        String cardId1= cardId.substring(0,4).replaceAll("[0-9]","*");
+        String cardId2= cardId.substring(4,8).replaceAll("[0-9]","*");
+        String cardId3= cardId.substring(8,12).replaceAll("[0-9]","*");
+        String lastFour = cardId.substring(cardId.length() - 4);
+        System.out.println(cardId1+" "+cardId2+" "+cardId3+" "+lastFour);
         }
     }
 
