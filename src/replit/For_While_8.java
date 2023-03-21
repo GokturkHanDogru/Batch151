@@ -1,6 +1,6 @@
 package replit;
 
-public class Foe_While_8 {
+public class For_While_8 {
     public static void main(String[] args) {
 
         char first ='a';
