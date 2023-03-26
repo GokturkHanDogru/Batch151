@@ -13,16 +13,13 @@ public class Credit_Karte {
         System.out.print(ilkharf.concat(name)+" ");
 
       /*  for (int i =0;i<cardId.length();i++){
-
                 if (i < cardId.length() - 4) {
                     System.out.print("*");
-
                 } else {
                     String lastFour = cardId.substring(cardId.length() - 4);
                     System.out.print(lastFour);
                     break;
                 }
-
             }*/
         System.out.println(" ");
         System.out.println("------------------------------");

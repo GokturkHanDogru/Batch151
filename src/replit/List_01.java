@@ -16,18 +16,40 @@ output:
 
 maximum occurring character is : a
      */
-    public static void main(String[] args) {
+            public static void main(String[] args) {
+                Scanner scanner = new Scanner(System.in);
 
-        Scanner input = new Scanner(System.in);
-        ArrayList<String> sentence = new ArrayList<>();
+                System.out.print("Enter a string: ");
+                String str = scanner.nextLine();
 
-       // List<String> sentence = List.of("Learning java is easy");
-        sentence.toArray();
+                // convert string to lowercase to ignore case sensitivity
+                str = str.toLowerCase();
 
-       //String  stnc [] =  new String [];
-        System.out.println(sentence);
+                int[] charCount = new int[str.length()]; // stores the count of each character in the string
+
+                // iterate through the string and update the character count
+                for (int i = 0; i < str.length(); i++) {
+                    charCount[str.charAt(i)]++;
+                }
+
+                int maxCount = -1; // stores the maximum count of a character
+                char maxChar = ' '; // stores the character with the maximum count
+
+                // iterate through the character count array and find the maximum count and character
+                for (int i = 0; i < 256; i++) {
+                    if (charCount[i] > maxCount) {
+                        maxCount = charCount[i];
+                        maxChar = (char) i;
+                    }
+                }
+
+                System.out.println("Maximum occurring character is: " + maxChar);
+
+                scanner.close();
+            }
+        }
 
 
 
-    }
-}
+
+

@@ -1,4 +1,4 @@
-package day22Sstringbuilder;
+package day22stringbuilder;
 
 public class Sb01 {
      /*
