@@ -1,6 +1,6 @@
 package day18constructorsstatickeyword;
 
-public class StaticNonStaticBlocks02 {
+public class    StaticNonStaticBlocks02 {
 
     public StaticNonStaticBlocks02() {
 

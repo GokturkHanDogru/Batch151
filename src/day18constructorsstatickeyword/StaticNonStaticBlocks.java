@@ -2,7 +2,8 @@ package day18constructorsstatickeyword;
 
 // "static blocklar" "static variablelara" ilk degerlerini vermek icin kullanilir
 // static bir variablea deger atmak icin kod yamaniz gerekirse static block kullaniniz
-// static bir variabla deger atamak icin yazilmasi gerekn kod main method icine de yazilabilir ama static block icine yazilan bi kod main methoddan önce calisir
+// static bir variabla deger atamak icin yazilmasi gerekn kod main method icine de yazilabilir ama
+// static block icine yazilan bi kod main methoddan önce calisir
 // bir classda birden fazla static block varsa en üstteki ilk calisir
 
 import java.time.LocalDate;

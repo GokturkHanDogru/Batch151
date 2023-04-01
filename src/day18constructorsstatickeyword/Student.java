@@ -1,6 +1,6 @@
 package day18constructorsstatickeyword;
 
-public class Student {
+public class    Student {
 /*
         1)"static" "class member"lar(variable + method + constructor + code blocks) tum object'ler tarafindan paylasilir.
         2)"static" "class member"lardaki degisiklikler tum object'ler tarafindan otomatik olarak gorulur.

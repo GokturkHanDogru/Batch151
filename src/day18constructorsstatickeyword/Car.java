@@ -20,7 +20,7 @@ public class Car {
     //Default Constructor
     //Default Constructorlar parametre kullanmazlar
     //Default Constructorlarin bodysi bostur
-    // Java kiskanctir
+    //Java kiskanctir
     public Car(){
 
     }
