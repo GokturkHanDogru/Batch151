@@ -34,7 +34,7 @@ istenilen sayıdır.
 
     public static void main(String[] args) {
 
-        int ilksayi = -456;
+        int ilksayi = -455;
         int ikincisayi = 219;
 
         System.out.println(carpim(ilksayi, ikincisayi));
@@ -54,12 +54,13 @@ istenilen sayıdır.
         int toplam =0;
 
         do {
-            ilksayi = ilksayi / 2;
-            ikincisayi = ikincisayi * 2;
-
             if (ilksayi % 2 == 1) {
                 toplam += ikincisayi;
             }
+            ilksayi = ilksayi / 2;
+            ikincisayi = ikincisayi * 2;
+
+
         }while(ilksayi>=1);
 
         if (negatif)

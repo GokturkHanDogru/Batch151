@@ -12,9 +12,11 @@ public class Animal {
         2) Private class memberlar child classlar tarafindan kullanilamaz.
        Default class memberlar ayni packagede child classlar tarafindan kullanilabilirler.
        protected class memberlar farkli ppackagede de olsalar child classlar tarafindan kullanilabilir.
-    3) Javada bir Classin sadece bir tane parenti olabilir.
+        3) Javada bir Classin sadece bir tane parenti olabilir.
        Coklu parenta "Multiple Inheritance" derler, tekli parenta "Single Inheritance" derler.
        Java "Multiple Inheritance"i desteklemez, java "Single Inheritance" kullanir
+        4) Apartman yapisindaki inheritence yapisini multi level inheritence denir.
+        Java multilevel inheritence'i destekler.
      */
 
     public void eat(){
