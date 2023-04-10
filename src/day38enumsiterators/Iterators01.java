@@ -1,9 +1,6 @@
 package day38enumsiterators;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Iterators01 {
     /*
@@ -56,6 +53,29 @@ public class Iterators01 {
             yourListItr.set(el+"!");
         }
         System.out.println(yourList);//[Tom!, Jim!, Clara!, Angie!, Mark!]
+
+        // hasPrevious() ve previous() nasil kullanilir?
+        while (yourListItr.hasPrevious()){
+           String el  =  yourListItr.previous();
+           yourListItr.set("?"+el);
+        }
+        System.out.println(yourListItr);//[?Tom!, ?Jim!, ?Clara!, ?Angie!, ?Mark!]
+
+        //En sondan en basa nasil iterate edebiliriz?
+        LinkedList<String> ourList = new LinkedList<>();
+        ourList.add("Tom");
+        ourList.add("Jim");
+        ourList.add("Clara");
+        ourList.add("Angie");
+        ourList.add("Mark");
+        System.out.println(ourList); //[Tom, Jim, Clara, Angie, Mark]
+
+        Iterator<String> ourListItr = ourList.descendingIterator(); // descendingIterator() ancak LinkedList ile kullanilabilir.
+
+        while (ourListItr.hasNext()){
+            String el = ourListItr.next();
+            System.out.println(el);
+        }
 
     }
 }
