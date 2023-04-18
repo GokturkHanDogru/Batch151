@@ -11,7 +11,7 @@ package day24inheritancepolymorphism;
       "super" parent class'daki variable'lari cagirmaya yarar
     7) Data type lar arqasinda IS-A ve HAS-A iliskisi varsa bu data type larina "COVARIANT" denir.
 
-1)Polymorphism==> Coklu sekil
+    1)Polymorphism==> Coklu sekil
       Yani bir method'un farkli sekillerde karsimiza cikmasi demektir.
       Polymorphism = Overloading(+) + Overriding(-)
     2)Overriding parents class'daki method'u child class'in ihtiyaclarina gore ozellestirerek kullanmak demektir.
