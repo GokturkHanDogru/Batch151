@@ -17,9 +17,9 @@ package day25polymorphism;
   "final method"larin body'si degistirilemez ama Override ederken method body'i degistiririz bu bir celiskdir.
   Bu yuzden Java "final method"larin Override edilmesine musaade etmez.
 9)"static method"lar Override edilemezler. Cunku "static method"lar tum child'lar icin ortak method'lardir
-      Bir child'in ortak method'u degistirdiginde diger Child'lar bundan etkilenir. Bu etkilenme ummadik sonuclar ortaya cikarabilir.
-      Bu yuzden Java "static method"larin Override edilmesine musaade etmez.
-    10)"private method"lar Override edilemez.
+  Bir child'in ortak method'u degistirdiginde diger Child'lar bundan etkilenir. Bu etkilenme ummadik sonuclar ortaya cikarabilir.
+  Bu yuzden Java "static method"larin Override edilmesine musaade etmez.
+  10)"private method"lar Override edilemez.
 
  */
 public class Animal {

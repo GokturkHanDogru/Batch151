@@ -1,6 +1,6 @@
 package day28interface;
 /*
-Class--> Class : extends
+   Class--> Class : extends
    interface--> interface : extends
    Class--> interface : implements
    interface --> Class : Olamaz...
