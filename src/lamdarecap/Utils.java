@@ -5,4 +5,7 @@ public class Utils {
         System.out.print(a+" ");
 
     }
+    public static int getSquare(int a){
+        return a*a;
+    }
 }

@@ -2,6 +2,7 @@ package lamdarecap;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Lambda01 {
@@ -10,6 +11,17 @@ public class Lambda01 {
 
         ciftPozitifSayiYazdir(sayi);
         System.out.println();
+        ciftPozitifSayiYazdir2(sayi);
+        System.out.println();
+        kareleriniYazdir(sayi);
+        System.out.println();
+        kareleriniYazdir2(sayi);
+        System.out.println();
+        siralaYazdir(sayi);
+        System.out.println();
+        pozitifKupBes(sayi);
+        System.out.println();
+        toplamBulYazdir(sayi);
 
 
     }
@@ -17,13 +29,59 @@ public class Lambda01 {
     //SORU1: List elemanlarının çift ve pozitif olanlarını, Lambda Expression kullanarak aralarında bosluk olacak sekilde yazdırın
 
     public static void ciftPozitifSayiYazdir(List<Integer> sayi){
-        sayi.stream().filter(t-> t>0 && t%2 == 0).forEach(t-> System.out.print(t+" "));
+        sayi.
+                stream().
+                filter(t-> t>0 && t%2 == 0).
+                forEach(t-> System.out.print(t+" "));
     }
 
     //SORU2: List elemanlarının çift ve pozitif olanlarını, Method Referances kullanarak aralarında bosluk olacak sekilde yazdırın
     public static void ciftPozitifSayiYazdir2(List<Integer> sayi){
-        //sayi.stream().filter(t-> t>0 && t%2 == 0).forEach();
+        sayi.
+                stream().
+                filter(t-> t>0 && t%2 == 0).
+                forEach(Utils::yazdir);
     }
 
+    //SORU3 : List elemanlarının karelerini, aralarında bosluk olacak sekilde yazdırın
+    public static void kareleriniYazdir(List<Integer>sayi){
+        sayi.
+                stream().
+                map(Utils::getSquare).
+                forEach(Utils::yazdir);
+    }
 
+    //SORU4 : List elemanlarının karelerini, tekrarsiz yazdırın
+    public static void kareleriniYazdir2(List<Integer>sayi){
+        sayi.
+                stream().
+                map(Utils::getSquare).
+                distinct().
+                forEach(Utils::yazdir);
+    }
+
+    //SORU5: List elemanlarını buyukten kucuge sıralayarak yazdırın
+    public static void siralaYazdir(List<Integer>sayi){
+        sayi.
+                stream().
+                sorted(Comparator.reverseOrder()).
+                forEach(Utils::yazdir);
+    }
+
+    // SORU6 : List elemanlarının pozitif olanlarının, kuplerini bulup, birler basamagı 5 olanları yazdırınız
+    public static void pozitifKupBes(List<Integer>sayi){
+        sayi.
+                stream().
+                filter(t-> t>0).
+                map(t-> t*t*t).
+                filter(t-> t%10==5).
+                forEach(Utils::yazdir);
+    }
+
+    // SORU7: List elemanlarının Method References ile toplamını bulun ve yazdırın
+    public static void toplamBulYazdir(List<Integer>sayi){
+        int sonuc = sayi.stream().reduce(Integer::sum).get();
+        System.out.println(sonuc);
+    }
 }
+
