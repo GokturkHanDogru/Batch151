@@ -1,11 +1,14 @@
 package day28interface;
-/*
+/* Child    Parent
    Class--> Class : extends
    interface--> interface : extends
    Class--> interface : implements
    interface --> Class : Olamaz...
    Ayni ise "extends" farkli ise "implements" kullan
    "interface"i class'in child'i yapma
+
+
+   abstract class ile interface arasindaki farklar nelerdir?
 
 *1)Abstract Class'lar hem "abstract" hem de "concrete" method'lar icerebilir fakat interface'ler sadece "abstract" method icerir.
 Ama inderface'lerde istersek "default" ve "static" keyword'lerini kullanarak "concrete" method uretebiliriz.

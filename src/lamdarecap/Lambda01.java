@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Lambda01 {
     public static void main(String[] args) {
@@ -22,6 +23,9 @@ public class Lambda01 {
         pozitifKupBes(sayi);
         System.out.println();
         toplamBulYazdir(sayi);
+        System.out.println();
+        toplamLamdaEx(sayi);
+        System.out.println(ciftElKareKucBuySirListReturn(sayi));
 
 
     }
@@ -83,5 +87,16 @@ public class Lambda01 {
         int sonuc = sayi.stream().reduce(Integer::sum).get();
         System.out.println(sonuc);
     }
+
+    // SORU8: List elemanlarının Lambda Expression ile toplamını bulun ve yazdırın
+    public static void toplamLamdaEx(List<Integer> sayi){
+       int sonuc = sayi.stream().reduce(0,(a,b)->a+b);
+        System.out.println(sonuc);
+    }
+    //SORU9 : Listin cift elemanlarının, karelerini, kucukten buyuge sıralayıp list halinde return ederek yazdırınız
+    public static List<Integer> ciftElKareKucBuySirListReturn(List<Integer> sayi){
+       return sayi.stream().filter(t-> t%2==0).map(Utils::getSquare).sorted().collect(Collectors.toList());
+    }
+
 }
 

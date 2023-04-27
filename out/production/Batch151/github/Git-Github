@@ -1,0 +1,29 @@
+ /*Git - Github nedir?
+    Git versiyon kontrol sistemi iken,  Github bu sistemi kullanan depolama servisleri denilebilir.
+    1-Yazilim-uygulama gelistirme devam eden bir surectir. Tek seferde oldu bitti diyemeyiz.
+    Tamamlandiktan sonra bile guncelleme-bakim ihtiyaci hasil olabilir.Uygulamanin guncellemedeki herbir asamasina versiyon denilir.
+    Versiyonlarin kontrol ve takibini "Git" ile yapariz.
+    2-Versiyon kontrolunu yaptigimiz projemizi bulut sisteminde de depolamak istersek de "Github" kullaniriz.
+    Performans olarak daha hizli oldugu icin genellikle  "Github" kullanilir lakin bunlarin haricinde de depolama servisleri mevcuttur.
+        //VCS nedir?
+    Uzun bir surec icerisinde yapilmasi gereken projelerde bir sure calistiktan sonra, daha sonra uzerinde calismak uzere kaydetmek gerekebilir.
+    Farkli kaydederek ilerleyebiliriz. Orn: Odev1-Odev2-Odev3... yerine herbir guncellemede tarih atarak ilerlemek daha derli toplu bir calisma olmasina olanak saglar.
+    Projenin tarihcesini gelisim sistemini gorebilmek icin "VCS"(Versiyon Control System) kullanabiliriz.
+    -Zaman icerisinde yapilan degisiklikleri kontrol etmemize imkan tanir.
+    -Proje uzerinde en son degisiklik yapanin da tespitini saglar.
+    3 tip VCS vardir.
+    -Yerel(Local)      -Merkezi(Central)    -Dagitik(Distributed)
+    Local VCS --> Local pc de versiyonlari olusturup, kontrol etmemizi saglar. Lakin ortak calismaya imkan tanimaz.
+    Herkesin kendi bilgisayarindadir.
+    Central VCS --> Cloud sistemde olusturulan projelerde herkes farkli pc lerden sunucuya baglanarak proje uzerindeki gelistirmelerini yaparlar.
+    Lakin uzaktan baglantida elektrik kesildiginde veya sunucu coktugunde server'lara baglanma sorunu yasayabiliriz.
+    Tek bir ornek cloud da oldugu icin gelistirme durur.
+    Distributed VCS --> Hem yerel hem de merkezi VCS ozelliklerini barindirir. Offline olarak calismaya imkan saglar.
+    Cloud daki sunucuda proje olusturulur ve gelisitirici kendi bilgisayari
+    uzerine klon eder ve gelistirmelerini local de yaptiktan sonra tekrar cloud'a gonderir.
+    Birden fazla yerde depolama imkani oldugu icin birinin basina bir is gelse bile digerinde copy edip calismaya devam edilebilir.
+   ***git(Locale)                                           ****GitHub
+   -Lokalde versiyon yonetimi yapmak                        -Yedekleme (backup)
+   -Offline calisabilmek                                    -Proje paylasimi(share)
+   -Hatalari geri alabilmek                                 -Proje yayinlama (deploy)
+   -Versiyonlar arasinda gecis yapabilme                    -Ortak calisma imkani(collaboration)
