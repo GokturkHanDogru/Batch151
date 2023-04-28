@@ -1,6 +1,6 @@
 package day42lambda;
 
-import day41Lambda.Utils;
+import day41lambda.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
