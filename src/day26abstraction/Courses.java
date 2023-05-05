@@ -47,6 +47,7 @@ package day26abstraction;
        */
 
 public abstract class Courses {
+    public int a =10;
 
     public abstract void math();
 
@@ -54,6 +55,8 @@ public abstract class Courses {
         System.out.println("Learn art");
     }
 
-
+    public int get() {
+        return a;
+    }
 
 }

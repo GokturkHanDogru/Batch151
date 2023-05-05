@@ -30,8 +30,11 @@ public class LinkedList01 {
         System.out.println(s); //[Lebron, Steve, Alan, Chris, Corper, Mike, Brad, Stephan]
 
         // s.remove(2);//Alan
+
         // s.remove("Corper");//Corper
+
         //s.remove();//[Steve, Chris, Mike, Brad, Stephan]
+
         //System.out.println(s);
 
         //s.removeFirstOccurrence("Brad");
